@@ -1324,14 +1324,6 @@
           "Quero entender qual opção faz mais sentido para mim."
         ];
 
-        const utmLines = Object.entries(state.utms).map(function ([key, value]) {
-          return key + ": " + value;
-        });
-
-        if (utmLines.length > 0) {
-          lines.push("", "Origem:", ...utmLines);
-        }
-
         return lines.join("\n");
       }
 
