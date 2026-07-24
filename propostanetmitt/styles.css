@@ -103,28 +103,36 @@ a {
 }
 
 .brand {
-  white-space: nowrap;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-}
-
-.brand span {
+  height: 64px;
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  margin-right: 7px;
-  border-radius: 8px;
-  background: var(--lime);
-  color: #071009;
+  gap: 10px;
+  white-space: nowrap;
 }
 
-.brand i {
+.brand-logo {
+  object-fit: contain;
+  object-position: center;
+}
+
+.brand-logo-ct {
+  width: 68px;
+  height: 62px;
+}
+
+.brand-logo-netmit {
+  width: 72px;
+  height: 46px;
+}
+
+.brand i,
+.hero-brand-lockup i,
+.footer-brand-lockup i {
   color: var(--lime);
   font-style: normal;
-  margin: 0 4px;
+  font-size: 17px;
+  font-weight: 900;
 }
 
 .topbar nav {
@@ -243,6 +251,33 @@ a {
 .hero-visual {
   position: relative;
   z-index: 2;
+}
+
+.hero-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  margin: 0 0 18px;
+  padding: 8px 15px 8px 8px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(4, 6, 5, 0.56);
+  backdrop-filter: blur(10px);
+}
+
+.hero-brand-lockup img {
+  object-fit: contain;
+}
+
+.hero-brand-lockup img:first-child {
+  width: 104px;
+  height: 82px;
+}
+
+.hero-brand-lockup img:last-child {
+  width: 106px;
+  height: 62px;
 }
 
 .eyebrow,
@@ -2042,6 +2077,26 @@ footer {
   font-size: 11px;
 }
 
+.footer-brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand-lockup img {
+  object-fit: contain;
+}
+
+.footer-brand-lockup img:first-child {
+  width: 62px;
+  height: 54px;
+}
+
+.footer-brand-lockup img:last-child {
+  width: 68px;
+  height: 42px;
+}
+
 .floating-cta {
   position: fixed;
   z-index: 90;
@@ -2208,7 +2263,21 @@ footer {
   }
 
   .brand {
-    font-size: 10px;
+    gap: 7px;
+  }
+
+  .brand-logo-ct {
+    width: 54px;
+    height: 54px;
+  }
+
+  .brand-logo-netmit {
+    width: 58px;
+    height: 38px;
+  }
+
+  .brand i {
+    font-size: 13px;
   }
 
   .hero {
@@ -2454,6 +2523,29 @@ footer {
 }
 
 @media (max-width: 390px) {
+  .brand-logo-ct {
+    width: 46px;
+  }
+
+  .brand-logo-netmit {
+    width: 48px;
+  }
+
+  .hero-brand-lockup {
+    gap: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-brand-lockup img:first-child {
+    width: 84px;
+    height: 68px;
+  }
+
+  .hero-brand-lockup img:last-child {
+    width: 88px;
+    height: 54px;
+  }
+
   .hero {
     min-height: 1100px;
   }
