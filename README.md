@@ -94,3 +94,21 @@ incorporadas nessa branch são implantadas automaticamente no `public_html`.
 Depois da publicação, a proposta permanece em:
 
 `https://ctitalovieira.com.br/propostanetmitt/`
+
+## Proposta Rango Fit × Grão e Sabor
+
+A proposta privada de parceria estratégica está em `propostarangofit/` e utiliza
+a mesma arquitetura estática do projeto:
+
+- `propostarangofit/index.html`: narrativa completa em 26 seções;
+- `propostarangofit/styles.css`: identidade visual, responsividade e modo apresentação;
+- `propostarangofit/script.js`: navegação, animações, modal e controles por teclado.
+
+Para abrir localmente, inicie o servidor na raiz do repositório e acesse:
+
+`http://localhost:8080/propostarangofit/`
+
+Não existe etapa de compilação ou instalação de dependências. A publicação
+ocorre automaticamente pela branch `main` em:
+
+`https://ctitalovieira.com.br/propostarangofit/`
